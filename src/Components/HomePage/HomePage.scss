@@ -2,26 +2,38 @@
 
 .homepage{
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url("../../assets//images/homepage.jpg") center center/cover no-repeat;
-
-
     width: 100%;
     height: 70vh;
+    z-index: 1;
 
-
-    &__img{
-        width: 100%;
-        z-index: -1;
-
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
     }
 
     h1{
         margin: 0px;
         color: $color-white;
         font-family: $font-third;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bolder;
         text-align: center;
         padding-top: 100px;
         
     }
+
+    .button--outline {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .homepage{
+        h1{
+            font-size: 3rem;
+        }
+
+    }
+    
 }

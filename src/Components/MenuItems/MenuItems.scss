@@ -1,0 +1,32 @@
+@use "../../variables.scss" as *;
+
+.menuContainer{
+    background: $color-black;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 5;
+
+
+    &__items{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: $color-white;
+        
+    }
+
+    &__items:hover{
+        background-color: $color-white;
+        color: #242424;
+        transition: all 0.5s ease;
+
+    }
+
+
+
+}
