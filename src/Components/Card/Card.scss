@@ -1,0 +1,25 @@
+@use "../../variables.scss" as *;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height:min-content;
+    padding: 5px;
+    
+
+    &__imgs{
+        width: 150px;
+        
+    }
+
+    &__name{
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 1rem;
+        font-weight: bolder;
+        margin: 0px;
+
+    }
+
+}

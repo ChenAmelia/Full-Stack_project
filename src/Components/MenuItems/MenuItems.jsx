@@ -9,21 +9,21 @@ const MenuItems = (props) => {
   return (
     <div className="menuContainer">
 
-        <Link className="menuContainer__items" to="/" onClick={toggleNav}>
+        <div className="menuContainer__items" to="/" onClick={toggleNav}>
           Home
-        </Link>
+        </div>
 
-        <Link className="menuContainer__items" to="/" onClick={toggleNav}>
+        <div className="menuContainer__items" to="/" onClick={toggleNav}>
           Service
-        </Link>
+        </div>
 
-        <Link className="menuContainer__items" to="/" onClick={toggleNav}>
+        <div className="menuContainer__items" to="/" onClick={toggleNav}>
           Products
-        </Link>
+        </div>
 
-        <Link className="menuContainer__items" to="/" onClick={toggleNav}>
+        <div className="menuContainer__items" to="/" onClick={toggleNav}>
           Sign up
-        </Link>
+        </div>
 
 
     </div>

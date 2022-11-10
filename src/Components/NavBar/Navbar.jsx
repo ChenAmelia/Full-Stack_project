@@ -8,7 +8,7 @@ import MenuItems from "../MenuItems/MenuItems";
 
 const Navbar = () => {
 
-    const {showNav, setShowNav} = useState(false)
+    const [showNav, setShowNav] = useState(false)
 
     const toggleNav = () => {
         setShowNav(!showNav)
@@ -30,8 +30,7 @@ const Navbar = () => {
             </div>
             
             
-            {showNav && <MenuItems toggleNav={toggleNav}/>}
-
+            
             <div className="navbar__menu">
                 <img 
                 src={menuIcon} 
@@ -39,7 +38,9 @@ const Navbar = () => {
                 onClick={toggleNav}
                 />
             </div>
-            
+
+            {showNav && <MenuItems/>}
+
             
 
         </div>

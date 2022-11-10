@@ -5,8 +5,10 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
+    position: fixed;
     z-index: 5;
-
+    width: 100%;
+    margin-top: 50px;
 
     &__items{
         text-align: center;
@@ -17,7 +19,6 @@
         font-size: 1.5rem;
         font-weight: bolder;
         color: $color-white;
-        
     }
 
     &__items:hover{
